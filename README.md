@@ -63,11 +63,11 @@ spring.application.name=soporte-tecnico
 
 ##  base de datos H2 en archivo
 
-|---|
-| spring.datasource.url=jdbc:h2:file:./data/soportedb |
-| spring.datasource.driver-class-name=org.h2.Driver | 
-| spring.datasource.username=sa | 
-| spring.datasource.password= |
+|---|---|
+| spring.datasource.url=jdbc:h2:file:./data/soportedb | |
+| spring.datasource.driver-class-name=org.h2.Driver | |
+| spring.datasource.username=sa | |
+| spring.datasource.password= |  |
 
 
 ##  JPA / Hibernate
