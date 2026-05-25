@@ -53,26 +53,6 @@ soporte-tecnico/
 │   └── soportedb.mv.db        ← base de datos H2 en archivo
 └── pom.xml
 
-#  Configuración
-
-API REST para la gestión de solicitudes de soporte técnico, desarrollada con **Spring Boot 3.5** y persistencia en base de datos **H2**.
-
-##  Descripción
-
-Sistema backend que permite administrar clientes, técnicos y solicitudes de soporte técnico. Incluye asignación de técnicos, seguimiento de estados y filtrado por cliente o estado de solicitud.
-
-##  Tecnologías utilizadas
-
-| Tecnología | Versión |
-|---|---|
-| Java | 17 |
-| Spring Boot | 3.5.0 |
-| Spring Data JPA | 3.5.0 |
-| H2 Database | (embedded) |
-| Springdoc OpenAPI (Swagger) | 2.8.8 |
-| Maven | 3.x |
-
-##  Estructura del proyecto
 
 #  Sistema de Soporte Técnico
 
@@ -135,6 +115,7 @@ Alli se pueden hacer consulta sql directamente como también insertar datos diec
 
 ##  Proyecto Académico
 Proyecto Académico realizado por el Grupo 2 
+Desarrollo de los Componentes del Negocio
 
 
 
