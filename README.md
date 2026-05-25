@@ -24,33 +24,61 @@ soporte-tecnico/
 ├── src/
 │   └── main/
 │       ├── java/com/grupo2/soporte_tecnico/
+
 │       │   ├── controller/
+
 │       │   │   ├── ClienteController.java
+
 │       │   │   ├── TecnicoController.java
+
 │       │   │   └── SolicitudController.java
+
 │       │   ├── model/
+
 │       │   │   ├── Cliente.java
+
 │       │   │   ├── Tecnico.java
+
 │       │   │   ├── Solicitud.java
+
 │       │   │   └── EstadoSolicitud.java
+
 │       │   ├── repository/
+
 │       │   │   ├── ClienteRepository.java
+
 │       │   │   ├── TecnicoRepository.java
+
 │       │   │   └── SolicitudRepository.java
+
 │       │   ├── service/
+
 │       │   │   ├── ClienteService.java
+
 │       │   │   ├── TecnicoService.java
+
 │       │   │   ├── SolicitudService.java
+
 │       │   │   └── impl/
+
 │       │   │       ├── ClienteServiceImpl.java
+
 │       │   │       ├── TecnicoServiceImpl.java
+
 │       │   │       └── SolicitudServiceImpl.java
+
 │       │   └── exception/
+
 │       │       └── RecursoNoEncontradoException.java
+
 │       └── resources/
+
 │           └── application.properties
+
 ├── data/
+
 │   └── soportedb.mv.db        ← base de datos H2 en archivo
+
 └── pom.xml
 
 
@@ -63,27 +91,32 @@ server.port=8080
 spring.application.name=soporte-tecnico
 
 ##  base de datos H2 en archivo
-###spring.datasource.url=jdbc:h2:file:./data/soportedb 
+spring.datasource.url=jdbc:h2:file:./data/soportedb 
 
-###spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.driver-class-name=org.h2.Driver
 
-###spring.datasource.username=sa 
+spring.datasource.username=sa 
 
-###spring.datasource.password= 
+spring.datasource.password= 
 
 
 ##  JPA / Hibernate
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
 
 ##  Consola H2
 spring.h2.console.enabled=true
+
 spring.h2.console.path=/h2-console
 
 ##  Swagger UI
 springdoc.api-docs.path=/api-docs
+
 springdoc.swagger-ui.path=/swagger-ui.html
+
 springdoc.swagger-ui.enabled=true
 
 ##  DevTools
@@ -93,10 +126,12 @@ spring.devtools.restart.enabled=false
 
 ### Clonar el repositorio
 git clone https://github.com/tu-usuario/soporte-tecnico.git
+
 cd soporte-tecnico
 
 ### Limpiar y compilar
 ./mvnw clean
+
 ./mvnw dependency:resolve
 
 ### Ejecutar
@@ -104,13 +139,18 @@ cd soporte-tecnico
 
 ## Acceso a la Aplicación
 Api Base: http://localhost:8080/api
+
 Swagger UI: http://localhost:8080/swagger-ui.html
+
 OpenAPI JSON: http://localhost:8080/api-docs
+
 Consola H2: http://localhost:8080/h2-console
 
 ## Credenciales consola H2
 JDBC URL: jdbc:h2:file:./data/soportedb
+
 Usuario: sa
+
 Contraseña: Vacia
 
 ##  Verificar en Consola H2
